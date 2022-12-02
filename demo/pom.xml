@@ -13,7 +13,7 @@
     <artifactId>demo</artifactId>
     <dependencies>
         <dependency>
-            <groupId>epam</groupId>
+            <groupId>com.epam.utils</groupId>
             <artifactId>utils</artifactId>
             <version>1.0</version>
         </dependency>
