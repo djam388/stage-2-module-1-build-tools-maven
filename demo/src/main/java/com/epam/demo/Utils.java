@@ -6,13 +6,14 @@ import java.util.List;
 
 public class Utils {
     public static boolean isAllPositiveNumbers(List<String> args) {
-        boolean isAllPositive = true;
+        boolean isPositiveNumberFound = true;
         for (String arg : args) {
-
-            if (!StringUtils.isPositiveNumber(arg)) {
-                isAllPositive = false;
+            isPositiveNumberFound = StringUtils.isPositiveNumber(arg);
+            if (!isPositiveNumberFound) {
+                isPositiveNumberFound = false;
+                break;
             }
         }
-        return isAllPositive;
+        return isPositiveNumberFound;
     }
 }
